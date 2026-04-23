@@ -16,7 +16,7 @@ st.markdown("""
         margin-bottom: 20px;
     }
     </style>
-    """, unsafe_allow_index=True)
+    """, unsafe_allow_html=True)
 
 st.title("🏛️ DC Heroes Database")
 st.write("Welcome to the Justice League archive. Select a hero to view their dossier.")
@@ -65,7 +65,7 @@ for name, info in dc_heroes.items():
                 <p><b>Home City:</b> {info['city']}</p>
                 <p><b>First Appearance:</b> {info['first_appearance']}</p>
             </div>
-            """, unsafe_allow_index=True)
+            """, unsafe_allow_html=True)
 
 st.divider()
 st.caption("Application developed for the deployment lab.")
